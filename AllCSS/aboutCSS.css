@@ -1,0 +1,51 @@
+header {
+    width:100%;
+    text-align: center;
+    height: calc(100vh - 100px); /* subtract navbar height */
+    border-bottom: 2px solid #a1c181;
+    padding: 0; /* important */
+}
+.headerText {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+}
+
+/* Heading */
+.about-heading {
+    color: #ec8997;
+    margin-bottom: 24px;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+/* Text block */
+.aboutText p {
+    max-width: 60rem;
+    margin-bottom: 1rem;
+}
+
+/* Image container */
+.aboutImg {
+    display: flex;
+    justify-content: center;
+}
+
+/* Image */
+.about-photo {
+    padding-top: 40px;
+    width: 100%;
+    max-width: 500px;      /* controls how large the image can get */
+    border-radius: 12px;   
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;        /* centers inside the column */
+}

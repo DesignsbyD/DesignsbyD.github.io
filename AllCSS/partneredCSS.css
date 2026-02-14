@@ -1,0 +1,70 @@
+/* Credibility strip */
+.cred-strip {
+  padding: 60px 0;
+  background-color: #eff0f4;
+  overflow: hidden;
+}
+
+.cred-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #003049;
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+
+/* Marquee container */
+.logo-marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Track */
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLogos 30s linear infinite;
+}
+
+/* Logo styling */
+.logo-track img {
+  height: 42px;
+  margin-right: 48px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  transition: opacity 0.3s ease, filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover on individual logos */
+.logo-track img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Slow down when hovering over the strip */
+.logo-marquee:hover .logo-track {
+  animation-duration: 90s; /* slows the loop */
+}
+
+/* Keyframes */
+@keyframes scrollLogos {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile tweaks */
+@media (max-width: 576px) {
+  .logo-track img {
+    height: 34px;
+    margin-right: 32px;
+  }
+}
