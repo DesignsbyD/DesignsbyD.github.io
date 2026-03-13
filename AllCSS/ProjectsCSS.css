@@ -1,0 +1,61 @@
+/* HERO IMAGE */
+
+.project-hero img{
+width:100%;
+height:85vh;
+object-fit:cover;
+}
+
+
+/* PROJECT META INFO */
+
+.project-meta{
+margin-top:60px;
+margin-bottom:40px;
+font-size:0.9rem;
+color:#6c757d;
+justify-content: center;
+}
+
+
+/* SECTION SPACING */
+
+.project-section{
+margin-top:80px;
+margin-bottom:80px;
+}
+
+
+/* HEADINGS */
+
+.project-section h2{
+font-size:1.8rem;
+font-weight:600;
+}
+
+
+/* GALLERY */
+
+.project-gallery{
+margin-top:100px;
+margin-bottom:100px;
+}
+
+
+.gallery-title{
+margin-bottom:40px;
+font-size:1.8rem;
+font-weight:600;
+}
+
+
+/* IMAGES */
+
+.gallery-img{
+border-radius:10px;
+transition:transform .3s ease;
+}
+
+.gallery-img:hover{
+transform:scale(1.02);
+}
