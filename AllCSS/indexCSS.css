@@ -5,7 +5,6 @@ header{
 .hero {
   padding-top: 80px;
   padding-bottom: 70px;
-  background-color: #003049;
 }
 
 /* Text column */
@@ -19,7 +18,7 @@ header{
   font-family: "Instrument Serif", serif;
   font-size: clamp(2.8rem, 6vw, 4.5rem);
   font-weight: 500;
-  color: #a1c181;
+  color: #003049;
   margin-bottom: 0.5rem;
 }
 
@@ -37,7 +36,7 @@ header{
   font-family: "Roboto", sans-serif;
   font-size: clamp(1.05rem, 2vw, 1.25rem);
   font-weight: 400;
-  color: #eff0f4;
+  color: #a1c181;
   line-height: 1.5;
   opacity: 0.85;
 }
@@ -72,7 +71,7 @@ header{
   }
 
   .hero-image img {
-    max-width: 260px;
+    display: none;
   }
 }
 
@@ -186,38 +185,6 @@ header{
 
 @keyframes blink {
   50% { opacity: 0; }
-}
-/* ----------------- CARASOLE------------ */
-#carouselSlides {
-   margin-bottom: 40px;
-   margin-top: 80px;
-   border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-}
-
-#carouselSlides .carousel-item {
-     height: 650px; /* desktop height */
-     transition: opacity 1.5s ease-in-out;
-
-}
-#carouselSlides .carousel-item img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-@media (max-width: 991px) {
-  #carouselSlides .carousel-item {
-    height: 340px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-  #carouselSlides .carousel-item {
-    height: 260px;
-  }
 }
 /* Projects Section */
 .projects-section {
